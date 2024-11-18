@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    color: #001e4d;
+    border-radius: 7px;
+}
+*::selection{
+    background-color: #001e4d;
+    color: #fff;
+}
+body{
+    background-color: #001e4d;
+    
+}
+.container{
+    background-color: #eee;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    margin: 100px auto 0;
+}
+.container h1{
+    text-transform: capitalize;
+    margin: 10px 0 30px;
+}
+.container hr{
+    background-color: #001e4d;
+    height: 3px;
+}
+.container .content h3{
+    margin: 20px 0 10px;
+    font-size: 20px;
+}
+.container .content .answers .btn{
+    border: #001e4d 1px solid;
+    margin-bottom: 15px;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container .content .answers .btn:hover:not([disabled]){
+    background-color: #92bcff;
+}
+.container .content .answers .btn:disabled{
+    cursor: no-drop;
+}
+.container .content .next button{
+    background-color: #001e4d;
+    padding: 20px 100px;
+    color: #fff;
+    border: none;
+    margin: 25px auto 0;
+    display: none;
+    font-weight: 600;
+}
+.container .content .answers .correct{
+    background-color: #9aeabc;
+}
+.container .content .answers .incorrect{
+    background-color: #ff9393;
+}
+.container .content .next button:hover{
+    background-color: #0e336f;
+}
